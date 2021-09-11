@@ -13,3 +13,5 @@ No Camel os padrões de integração e as rotas são declaradas usando um lingua
 | Blueprint XML | Definição de rotas usando Blueprint XML para OSGI |
 | Rest DSL | Para definição de serviços REST |
 | Annotations DSL | Definição de rotas usando anotações em Java Beans |
+
+Os conceitos explicados nesse livro são aplicáveis a todas ou, pelo menos, a grande maioria das DSLs suportadas pelo Camel. Por simplicidade, todas as referências e exemplos do livro são feitos utilizando a Java DSL.
