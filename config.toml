@@ -2,8 +2,5 @@ baseURL = 'http://example.org/'
 languageCode = 'pt-BR'
 title = 'Camel Passo a Passo'
 themesDir = "themes"
-# https://hugothemesfree.com/a-minimal-documentation-theme-for-hugo/
-# theme = "hugo-whisper-theme-master"
-
 # https://hugothemesfree.com/declination-of-matcornic-learn-theme-to-hugo/
 theme = "docdock"
