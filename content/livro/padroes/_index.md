@@ -5,12 +5,12 @@ draft: false
 weight: 2
 ---
 
-# Padrões de Integração
+Os padrões de integração corporativa, do inglês _Enterprise Integration Patterns_ (EIPs), são uma [biblioteca](https://www.enterpriseintegrationpatterns.com/) de padrões arquiteturais e funcionais. Eles fornecessem um conjunto de soluções pré-definidas para os desafios de interligar aplicações.
 
-Os padrões de integração corporativa, do inglês Enterprise Integration Patterns (EIPs), são uma biblioteca de padrões arquiteturais e funcionais. Eles fornecessem um conjunto de soluções pré-definidas para os desafios de interligar aplicações.
+Embora originalmente concebidas como uma série de padrões voltadas para o mundo corporativo, interagindo com aplicações corporativas, seu escopo e utilidade trascendem o universo corporativo e as torna extremamente relevantes nos mais variados tipos de conexto. Conceitos atuais como microserviços, computação em nuvem, big data e outros continuam a se beneficiar desses padrões.
 
-Embora inicialmente voltadas para o mundo corporativo, interagindo com aplicações corporativas, esse contexto foi ampliado para os dias atuais.
+Os EIP foram desenvolvidos pelo engenheiro de software Gregor Hohpe, após anos de experiência desenvolvendo soluções de integração, e refletem algumas das melhores práticas para integração entre sistemas.
 
-Com a popularização de aplicações sociais, aprendizado de máquina, big data e muitas outras disciplinas.
+A maioria dos mecanismos de integração descritos na biblioteca de EIP pode ser encontrado em diversas outras ferramentas de integração, mensageria e _streaming_ de dados – além do Apache Camel – incluindo: [Apache ActiveMQ](http://activemq.apache.org/), [Apache Kafka](https://kafka.apache.org/), [Apache Pulsar](http://pulsar.apache.org/), IBM WebSphere ESB, Mule ESB e muitos outros.
 
-Os EIP foram desenvolvidos pelo engenheiro de software Gregor Hohpe, após anos de experiência desenvolvendo soluções de integração, e refletem algumas das melhores práticas para integração entre sistemas. A maioria dos mecanismos de integração coletados na biblioteca de EIP pode ser encontrado em diversas outras ferramentas de integração – além do Apache Camel – incluindo: IBM WebSphere ESB, Mule, Apache ServiceMix e muitos outros.
+As seções a seguir contém um resumo dos padrões de integração.

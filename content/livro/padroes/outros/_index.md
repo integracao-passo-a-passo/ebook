@@ -4,7 +4,7 @@ draft: false
 weight: 3
 ---
 
-## Gerenciamento de Sistemas
+Outros padrões de integração comumente utilizados.
 
 ## Escuta (Wire Tap)
 

@@ -1,8 +1,10 @@
 ---
-title: "Sistemas de Mensageria"
+title: "Mensageria"
 draft: false
 weight: 2
 ---
+
+Esses padrões descrevem padrões comuns para soluções desenvolvidas em torno do conceito de troca de mensagens (mensageria).
 
 ## Sistemas de Mensageria
 
@@ -43,7 +45,6 @@ weight: 2
 | Expiração de mensagem | Message expiration | Permite indicar um tempo limite dentro do qual é aceitável consumir a mensagem. |
 | Identificador de formato | Format identifier | Fornece ao receptor uma maneira de identificar o formato da mensagem. |
 
-
 ## Roteamento de Mensagens
 
 | Nome | Nome em Inglês | Descrição |
@@ -67,36 +68,3 @@ weight: 2
 |------|----------------|-----------|
 | Enriquecedor de conteúdo | Content enricher | Fornece uma solução para a necessidade de incrementar a carga de dados de uma mensagem. |
 | Filtro de conteúdo | Content filter | Fornece uma solução para a necessidade de filtrar dados de uma mensagem, de modo que dados irrelevantes sejam removidos da transação. |
-
-## Gerenciamento de Sistemas
-
-### Escuta (Wire Tap)
-
-Esse padrão detalha uma solução para a necessidade de inspecionar as mensagens trafegando em um canal, com a garantia de que elas não serão modificadas no processo.
-
-## Outros
-
-- Transformação de mensagens
-	- Normalizador (normalizer)
-	- Modelo de dados canônico (canonical data model)
-	- Invólucro de envelope (envelope wrapper)
-	- Recibo (claim check)
-- Terminadores ou pontos finais de mensageria (endpoints)
-	- Portal de entrada de mensagens (messaging gateway)
-	- Mapeamento de mensagens (message mapper)
-	- Cliente transacional (transactional client)
-	- Consumidor por captação (polling consumer)
-	- Consumidor dirigido por evento (event-driver consumer)
-	- Consumidor concorrente (concurrent consumer)
-	- Despachante de mensagens (message dispatcher)
-	- Consumidor seletivo (selective consumer)
-	- Assinante persistente (persistent subscriber)
-	- Receptor idempotente (idempotent receiver)
-	- Ativador de Serviço (service activator)
-- Gerenciamento de sistemas
-	- Controlle de barramento (control bus)
-	- Histórico de mensagens (message history)
-	- Desvio (Detour)
-	- Loja de mensagens (message store)
-	- Proxy esperto (smart proxy)
-	- Canal de expurgo (channel purger)

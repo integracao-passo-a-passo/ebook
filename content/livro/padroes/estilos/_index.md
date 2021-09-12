@@ -4,7 +4,7 @@ draft: false
 weight: 1
 ---
 
-## Estilos De Integração
+Esses padrões descrevem estilos diferentes de integrar sistemas.
 
 | Nome | Nome em Inglês | Descrição |
 |------|----------------|-----------|
