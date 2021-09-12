@@ -1,4 +1,4 @@
-baseURL = 'http://example.org/'
+baseURL = '.'
 languageCode = 'pt-BR'
 title = 'Camel Passo a Passo'
 themesDir = "themes"
