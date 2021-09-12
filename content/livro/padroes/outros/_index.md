@@ -1,6 +1,6 @@
 ---
 title: "Outros"
-draft: true
+draft: false
 weight: 3
 ---
 

@@ -1,6 +1,6 @@
 ---
 title: "Componentes e Endpoints"
-draft: true
+draft: false
 weight: 2
 ---
 

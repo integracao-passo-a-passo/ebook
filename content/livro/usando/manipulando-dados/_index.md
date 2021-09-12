@@ -1,6 +1,6 @@
 ---
 title: "Manipulando Dados"
-draft: true
+draft: false
 weight: 5
 ---
 

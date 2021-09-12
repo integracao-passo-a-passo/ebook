@@ -1,6 +1,6 @@
 ---
 title: "Definindo Rotas"
-draft: true
+draft: false
 weight: 4
 ---
 

@@ -1,6 +1,6 @@
 ---
 title: "Por Tratamento de Excessão"
-draft: true
+draft: false
 weight: 3
 ---
 

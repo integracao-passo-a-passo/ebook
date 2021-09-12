@@ -1,6 +1,6 @@
 ---
 title: "Licenças"
-draft: true
+draft: false
 weight: 6
 ---
 

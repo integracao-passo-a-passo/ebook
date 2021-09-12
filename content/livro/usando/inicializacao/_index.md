@@ -1,6 +1,6 @@
 ---
 title: "Inicialização"
-draft: true
+draft: false
 weight: 2
 ---
 

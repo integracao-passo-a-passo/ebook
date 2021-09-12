@@ -1,6 +1,6 @@
 ---
 title: "Configuração"
-draft: true
+draft: false
 weight: 3
 ---
 

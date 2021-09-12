@@ -1,6 +1,6 @@
 ---
 title: "Conceitos Básicos"
-draft: true
+draft: false
 weight: 3
 ---
 

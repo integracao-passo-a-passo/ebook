@@ -1,6 +1,6 @@
 ---
 title: "Configurando Rotas"
-draft: true
+draft: false
 weight: 1
 ---
 

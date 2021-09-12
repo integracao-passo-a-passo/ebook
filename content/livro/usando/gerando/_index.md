@@ -1,6 +1,6 @@
 ---
 title: "Gerando um Novo Projeto"
-draft: true
+draft: false
 weight: 1
 ---
 

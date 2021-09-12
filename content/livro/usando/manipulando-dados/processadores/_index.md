@@ -1,6 +1,6 @@
 ---
 title: "Processadores"
-draft: true
+draft: false
 weight: 1
 ---
 

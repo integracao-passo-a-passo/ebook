@@ -1,6 +1,6 @@
 ---
 title: "Estilos de Integração"
-draft: true
+draft: false
 weight: 1
 ---
 

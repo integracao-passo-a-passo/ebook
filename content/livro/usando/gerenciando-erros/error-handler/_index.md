@@ -1,6 +1,6 @@
 ---
 title: "Por Manipulador de Erros (Error Handler)"
-draft: true
+draft: false
 weight: 2
 ---
 
