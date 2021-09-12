@@ -1,4 +1,4 @@
-baseURL = '.'
+baseURL = 'https://integracao-passo-a-passo.github.io/ebook/'
 languageCode = 'pt-BR'
 title = 'Camel Passo a Passo'
 themesDir = "themes"
