@@ -1,11 +1,1 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-  xmlns:xhtml="http://www.w3.org/1999/xhtml">
-  <url>
-    <loc>http://example.org/</loc>
-  </url><url>
-    <loc>http://example.org/categories/</loc>
-  </url><url>
-    <loc>http://example.org/tags/</loc>
-  </url>
-</urlset>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml"><url><loc>./livro/</loc><lastmod>2021-09-11T10:44:14+02:00</lastmod></url><url><loc>./livro/introducao/</loc><lastmod>2021-09-11T10:44:14+02:00</lastmod></url><url><loc>./livro/usando/definindo-rotas/configurando-rotas/</loc></url><url><loc>./livro/padroes/estilos/</loc></url><url><loc>./livro/usando/gerando/</loc></url><url><loc>./livro/usando/manipulando-dados/processadores/</loc></url><url><loc>./livro/conceitos-basicos/rotas/</loc></url><url><loc>./livro/usando/conversores-de-dados/usando/</loc></url><url><loc>./livro/usando/gerenciando-erros/dsl/</loc></url><url><loc>./livro/padroes/</loc><lastmod>2021-09-11T10:44:14+02:00</lastmod></url><url><loc>./livro/conceitos-basicos/componentes-e-endpoints/</loc></url><url><loc>./livro/usando/inicializacao/</loc></url><url><loc>./livro/usando/gerenciando-erros/error-handler/</loc></url><url><loc>./livro/padroes/mensageria/</loc></url><url><loc>./livro/usando/configuracao-componentes/apache-activemq/</loc></url><url><loc>./livro/conceitos-basicos/</loc></url><url><loc>./livro/usando/configuracao-componentes/</loc></url><url><loc>./livro/conceitos-basicos/linguagens/</loc></url><url><loc>./livro/padroes/outros/</loc></url><url><loc>./livro/usando/gerenciando-erros/excessao/</loc></url><url><loc>./livro/conceitos-basicos/contexto/</loc></url><url><loc>./livro/usando/definindo-rotas/</loc></url><url><loc>./livro/usando/</loc></url><url><loc>./livro/camel-quarkus/</loc></url><url><loc>./livro/usando/manipulando-dados/</loc></url><url><loc>./livro/camel-quarkus/usando/</loc></url><url><loc>./livro/usando/gerenciando-erros/</loc></url><url><loc>./livro/licenca/</loc></url><url><loc>./livro/saiba-mais/</loc></url><url><loc>./livro/usando/conversores-de-dados/</loc></url><url><loc>./</loc><lastmod>2021-09-11T10:44:14+02:00</lastmod><priority>0</priority></url><url><loc>./livro/introducao/o-que-e/</loc><lastmod>2021-09-11T10:44:14+02:00</lastmod></url><url><loc>./categories/</loc></url><url><loc>./tags/</loc></url></urlset>
