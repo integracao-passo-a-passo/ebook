@@ -22,11 +22,14 @@ jobs:
           extended: true
 
       - name: Build
-        run: hugo --minify -b https://integracao-passo-a-passo.github.io/ebook/
+        run: hugo --minify
 
-      - name: Deploy
-        uses: peaceiris/actions-gh-pages@v3
-        if: github.ref == 'refs/heads/main'
+      - name: Upload from public_html via FTP
+        uses: airvzxf/ftp-deployment-action@latest
         with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./public
+          server: ${{ secrets.FTP_SERVER }}
+          user: ${{ secrets.FTP_USERNAME }}
+          password: ${{ secrets.FTP_PASSWORD }}
+          local_dir: "./public"
+          remote_dir: ${{ secrets.FTP_PATH }}
+          delete: "false"
