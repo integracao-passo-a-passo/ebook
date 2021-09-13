@@ -1,4 +1,4 @@
-baseURL = 'https://www.angusyoung.org/arquivos/camel-passo-a-passo/'
+baseURL = 'https://www.angusyoung.org/ebook/camel-passo-a-passo/'
 languageCode = 'pt-BR'
 title = 'Camel Passo a Passo'
 themesDir = "themes"
