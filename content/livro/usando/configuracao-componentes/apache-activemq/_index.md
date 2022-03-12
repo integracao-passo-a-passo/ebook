@@ -17,7 +17,7 @@ Com isso temos uma instância do Artemis ouvindo nas portas 5672 (protocolo AMQP
 Uma vez que o Artemis esteja rodando com sucesso podemos seguir adiante e criar um projeto simples usando o Camel. Para isso, executamos o seguinte comando:
 
 ```shell
-mvn archetype:generate -B -DarchetypeGroupId=org.apache.camel.archetypes -DarchetypeArtifactId=camel-archetype-java -DarchetypeVersion=3.11.1 -DgroupId=camel-passo-a-passo -DartifactId=activemq-app-camel -Dversion=1.0.0-SNAPSHOT -Dpackage=activemq.app.camel
+mvn archetype:generate -B -DarchetypeGroupId=org.apache.camel.archetypes -DarchetypeArtifactId=camel-archetype-java -DarchetypeVersion=3.14.2 -DgroupId=camel-passo-a-passo -DartifactId=activemq-app-camel -Dversion=1.0.0-SNAPSHOT -Dpackage=activemq.app.camel
 ```
 
 Assim como no caso do primeiro projeto criado anteriormente, o resultado do comando acima será um projeto básico com o Camel e alguns dos arquivos mínimos necessários para a execução. Modificaremos esse projeto para que ele envie os arquivos para filas diferentes na nossa instância do Apache Artemis.

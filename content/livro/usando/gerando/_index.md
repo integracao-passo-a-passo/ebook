@@ -11,7 +11,7 @@ Inicializar os projetos dessa maneira facilita a padronização de característi
 O seguinte comando pode ser usado para gerar um projeto Camel usando a Java DSL:
 
 ```shell
-mvn archetype:generate -B -DarchetypeGroupId=org.apache.camel.archetypes -DarchetypeArtifactId=camel-archetype-java -DarchetypeVersion=3.11.1 -DgroupId=camel-passo-a-passo -DartifactId=primeiro-app-camel -Dversion=1.0.0-SNAPSHOT -Dpackage=primeiro.app.camel
+mvn archetype:generate -B -DarchetypeGroupId=org.apache.camel.archetypes -DarchetypeArtifactId=camel-archetype-java -DarchetypeVersion=3.14.2 -DgroupId=camel-passo-a-passo -DartifactId=primeiro-app-camel -Dversion=1.0.0-SNAPSHOT -Dpackage=primeiro.app.camel
 ```
 
 **Dica**: também é possível usar o projeto [Kameleon](https://kameleon.dev), que provê uma interface web, para gerar o projeto.

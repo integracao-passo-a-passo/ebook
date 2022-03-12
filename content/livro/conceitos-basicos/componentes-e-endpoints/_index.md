@@ -6,7 +6,7 @@ weight: 2
 
 A ligação do Camel com os endpoints é feita através de componentes. Os componentes são a  implementação de mais baixo nível do meio utilizado para a troca de mensagens através do Camel. A diferença entre um endpoint e um componente é que enquanto o primeiro declara um terminador da rota, o segundo determina qual é o protocolo ou tecnologia utilizada pelo terminador.
 
-O Camel conta, atualmente em sua versão 3.11.1, com suporte a [mais de 300 componentes](https://camel.apache.org/components/latest/). Através destes, é possível ligar componentes que vão desde os mais tradicionais protocolos de mensageria, passando por redes sociais como o Twitter e o Facebook, até sistemas de CRM como Salesforce. Alguns dos principais componentes disponibilizados pelo projeto são:
+O Camel conta, atualmente em sua versão 3.14.2, com suporte a [mais de 300 componentes](https://camel.apache.org/components/latest/). Através destes, é possível ligar componentes que vão desde os mais tradicionais protocolos de mensageria, passando por redes sociais como o Twitter e o Facebook, até sistemas de CRM como Salesforce. Alguns dos principais componentes disponibilizados pelo projeto são:
 
 **Dica**: todos os componentes do Camel contam com uma enorme gama de opções, sendo possível ajusta-los para os mais diversos propósitos.
 
