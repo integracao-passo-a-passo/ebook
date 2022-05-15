@@ -6,7 +6,7 @@ weight: 5
 
 Durante o roteamento e a mediação dos dados em trânsito, uma necessidade bastante comum é a de manipular, transformar e enriquece-los. O Camel fornece diversos mecanismos para esse fim, desde extensões disponíveis na própria Java DSL até processadores com capacidade de manipular diretamente os dados em trânsito.
 
-Adicionar cabeçalhos (_headers_) através do método [`setHeader`](https://www.javadoc.io/static/org.apache.camel/camel-core-model/3.14.2/org/apache/camel/model/ProcessorDefinition.html#setHeader-java.lang.String-org.apache.camel.Expression-) é um exemplo be comum desse tipo de manipulação:
+Adicionar cabeçalhos (_headers_) através do método [`setHeader`](https://www.javadoc.io/static/org.apache.camel/camel-core-model/3.14.2/org/apache/camel/model/ProcessorDefinition.html#setHeader-java.lang.String-org.apache.camel.Expression-) é um exemplo bem comum desse tipo de manipulação:
 
 ```java
 from("direct:start")
