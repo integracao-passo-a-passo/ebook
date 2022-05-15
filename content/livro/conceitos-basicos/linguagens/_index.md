@@ -4,7 +4,7 @@ draft: false
 weight: 3
 ---
 
-No Camel os padrões de integração e as rotas são declaradas usando uma linguagens de domínio específico (DSL – Domain Specific Language). O Camel fornece a possibilidade de criar rotas usando as seguintes DSLs:
+No Camel os padrões de integração e as rotas são declaradas usando linguagens de domínio específico (DSL – Domain Specific Language). O Camel fornece a possibilidade de criar rotas usando as seguintes DSLs:
 
 | Linguagem | Descrição |
 |-----------|-----------|
