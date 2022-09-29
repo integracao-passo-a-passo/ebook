@@ -4,7 +4,7 @@ draft: false
 weight: 3
 ---
 
-O último dos métodos faz uma espécie de armadilha (_trap_), capturando todas as excessões do tipo especificado em qualquer ponto da rota. Essa armadilha é ativada através do método [`onException`](https://www.javadoc.io/static/org.apache.camel/camel-core-model/3.14.2/org/apache/camel/builder/RouteBuilder.html#onException-java.lang.Class...-), através do qual podemos [definir uma politica de tratamento](https://www.javadoc.io/static/org.apache.camel/camel-core-model/3.14.2/org/apache/camel/model/OnExceptionDefinition.html) para a excessão especificada como parametro para o método.
+O último dos métodos faz uma espécie de armadilha (_trap_), capturando todas as excessões do tipo especificado em qualquer ponto da rota. Essa armadilha é ativada através do método [`onException`](https://www.javadoc.io/static/org.apache.camel/camel-core-model/3.18.2/org/apache/camel/builder/RouteBuilder.html#onException-java.lang.Class...-), através do qual podemos [definir uma politica de tratamento](https://www.javadoc.io/static/org.apache.camel/camel-core-model/3.18.2/org/apache/camel/model/OnExceptionDefinition.html) para a excessão especificada como parametro para o método.
 
  Usando como exemplo a rota definida anteriormente, temos:
 

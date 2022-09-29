@@ -6,7 +6,7 @@ weight: 1
 
 A forma mais flexível de manipular dados em trânsito (_exchange_) é através de processadores. Um processador é uma classe com propósito de fazer manipulações complexas no conteúdo de um exchange. Esse processador, conhecido como _processor_ no jargão do Camel, pode ser utilizado, por exemplo, para implementar um _parser_, interagir com um _bean_, enriquecer os dados e qualquer outra operação de mais baixo nível que não possa ser feito através da Java DSL.
 
-No Camel um processador é feito implementando a interface [`org.apache.camel.Processor`](https://www.javadoc.io/static/org.apache.camel/camel-api/3.14.2/org/apache/camel/Processor.html) e, então, implementando a lógica de processamento no método [`process`](https://www.javadoc.io/static/org.apache.camel/camel-api/3.14.2/org/apache/camel/Processor.html#process-org.apache.camel.Exchange-). Esse método recebe uma instância do dado em trânsito, do tipo [Exchange](https://www.javadoc.io/static/org.apache.camel/camel-api/3.14.2/org/apache/camel/Exchange.html), através do qual é possível manipula-los.
+No Camel um processador é feito implementando a interface [`org.apache.camel.Processor`](https://www.javadoc.io/static/org.apache.camel/camel-api/3.18.2/org/apache/camel/Processor.html) e, então, implementando a lógica de processamento no método [`process`](https://www.javadoc.io/static/org.apache.camel/camel-api/3.18.2/org/apache/camel/Processor.html#process-org.apache.camel.Exchange-). Esse método recebe uma instância do dado em trânsito, do tipo [Exchange](https://www.javadoc.io/static/org.apache.camel/camel-api/3.18.2/org/apache/camel/Exchange.html), através do qual é possível manipula-los.
 
 ```java
 public void process(Exchange exchange) throws Exception {

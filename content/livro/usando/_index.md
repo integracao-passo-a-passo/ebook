@@ -18,7 +18,7 @@ Para um projeto usando o componente Camel Main, o mínimo necessário são os co
 		<dependency>
 			<groupId>org.apache.camel</groupId>
 			<artifactId>camel-bom</artifactId>
-			<version>3.14.2</version>
+			<version>3.18.2</version>
 			<scope>import</scope>
 			<type>pom</type>
 		</dependency>

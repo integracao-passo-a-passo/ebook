@@ -8,7 +8,7 @@ O Camel pode ser executado em diferentes _runtimes_, como servidores de aplicaç
 
 Entretanto, com a popularização dos micro-serviços e a containerização de soluções, onde, por exemplo, os projetos são executados em contêineres rodando dentro de clusters Kubernetes, é cada vez mais comum a criação de aplicações leves.
 
-Muitas vezes essas aplicações necessitam apenas uma camada fina de abstração capaz de inicializar a aplicação, ler um arquivo configuração ou variáveis de ambiente e executar as rotas. O Camel fornece uma classe [`Main`](https://www.javadoc.io/static/org.apache.camel/camel-main/3.14.2/index.html) que facilita o trabalho de rodar o Camel sem a necessidade de um runtime adicional. Essa classe permite o que se chama de inicialização em modo _standalone_.
+Muitas vezes essas aplicações necessitam apenas uma camada fina de abstração capaz de inicializar a aplicação, ler um arquivo configuração ou variáveis de ambiente e executar as rotas. O Camel fornece uma classe [`Main`](https://www.javadoc.io/static/org.apache.camel/camel-main/3.18.2/index.html) que facilita o trabalho de rodar o Camel sem a necessidade de um runtime adicional. Essa classe permite o que se chama de inicialização em modo _standalone_.
 
 O código abaixo mostra um exemplo de como utilizar essa classe:
 
