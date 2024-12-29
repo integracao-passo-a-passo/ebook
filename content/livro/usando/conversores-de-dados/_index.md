@@ -4,7 +4,7 @@ draft: false
 weight: 7
 ---
 
- Os conversores de dados permitem a implementação de rotinas de conversão de dados entre o formato que é utilizado para a comunicação entre as aplicações. O Camel contém uma série de conversores de tipos que podem ser configurados para facilitar a conversão de dados ao longo das rotas.
+ Os conversores de dados permitem a implementação de rotinas de conversão de dados entre o formato utilizado para a comunicação entre as aplicações. O Camel contém uma série de conversores de tipos que podem ser configurados para facilitar a conversão de dados ao longo das rotas.
 
 O Apache Camel contém diversos tipos de conversores de dados. Alguns deles são específicos para determinados componentes. Exemplos de conversores de dados bastante populares e comumente utilizados são:
 

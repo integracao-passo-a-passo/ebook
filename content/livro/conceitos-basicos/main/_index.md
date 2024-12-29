@@ -33,7 +33,7 @@ public class MainApp {
 Para utilizar essa classe é necessário incluir a dependência `camel-main` no projeto.
 
 
-Eventualmente pode ser necessário durante alguma parte do ciclo de vida da classe `Main`. Para isso o Camel oferece uma interface chamada [`MainListener`](https://www.javadoc.io/doc/org.apache.camel/camel-main/latest/org/apache/camel/main/MainListener.html) que provê métodos que são executados em diferentes pontos do ciclo de vida da classe `Main`.
+Eventualmente pode ser necessário durante alguma parte do ciclo de vida da classe `Main`. Para isso o Camel oferece uma interface chamada [`MainListener`](https://www.javadoc.io/doc/org.apache.camel/camel-main/latest/org/apache/camel/main/MainListener.html) que provê métodos executados em diferentes pontos do ciclo de vida da classe `Main`.
 
 ```java
 public class ExampleMainListener implements MainListener {

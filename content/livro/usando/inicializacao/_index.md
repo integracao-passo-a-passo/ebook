@@ -8,11 +8,11 @@ Explorando o projeto que foi gerado é possível identificar duas classes Java. 
 
 Esse wrapper permite uma execução limpa do Camel, sem a necessidade de uso de sleeps, busy spins e outros métodos rudimentares para controlar a execução do Camel.
 
-Nesta classe podemos ver o uso de uma segunda classe auto-gerada, a `MyRouteBuilder`. Esta classe, uma especialização da classe abstrata `org.apache.camel.builder.RouteBuilder` é utilizada para configurar a rota utilizada pelo programa.
+Nesta classe podemos ver o uso de uma segunda classe autogerada, a `MyRouteBuilder`. Esta classe, uma especialização da classe abstrata `org.apache.camel.builder.RouteBuilder` é utilizada para configurar a rota utilizada pelo programa.
 
 Ela é adicionada as propriedades de configuração do wrapper, o que é feito através dos métodos encadeados `configure().addRoutesBuilder()`, para que seja possível executa-la quando o programar rodar.
 
-A configuração da rota dentro do método configure na classe `MyRouteBuilder` provê uma rota bastante simples mas que apresenta diversos conceitos importantes do Camel. De modo geral, a rota copia arquivos de um diretório para outro baseado no seu conteúdo. A rota do projeto de exemplo é a seguinte:
+A configuração da rota dentro do método configure na classe `MyRouteBuilder` provê uma rota bastante simples, mas que apresenta diversos conceitos importantes do Camel. De modo geral, a rota copia arquivos de um diretório para outro baseado no seu conteúdo. A rota do projeto de exemplo é a seguinte:
 
 ```java
 from("file:src/data?noop=true")
@@ -31,7 +31,7 @@ Avaliando linha a linha a definição desta rota, temos o seguinte:
 from("file:src/data?noop=true")
 ```
 
-Um endpoint inicial from é declarado usando o componente `file`, utilizado para ler, monitorar arquivos e diretórios em disco, usando como entrada o diretório `src/data` que é parte da estrutura de diretórios do projeto recém criado. O componente é configurado com a opção `noop`, para evitar que os arquivos sejam movidos ou removidos do diretório.
+Um endpoint inicial from é declarado usando o componente `file`, utilizado para ler, monitorar arquivos e diretórios em disco, usando como entrada o diretório `src/data` que é parte da estrutura de diretórios do projeto recém-criado. O componente é configurado com a opção `noop`, para evitar que os arquivos sejam movidos ou removidos do diretório.
 
 Na linha seguinte, o código utiliza o método choice da DSL para aplicar uma condição na rota e definir que os dados devem seguir um rumo ou outro de acordo com uma expressão xpath.
 

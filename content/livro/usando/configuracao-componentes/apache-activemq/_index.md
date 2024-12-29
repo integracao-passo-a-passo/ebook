@@ -4,9 +4,12 @@ draft: false
 weight: 3
 ---
 
-O [Apache ActiveMQ Artemis](https://activemq.apache.org/components/artemis/) é um sistema moderno de mensageria de código aberto, escrito em Java, e mantido pela Fundação de Software Apache. Atualmente encontra-se em desenvolvimento constante sendo trabalhando como o sucessor natural do tradicional [Apache ActiveMQ](https://activemq.apache.org/) e a próxima evolução em termos de mensageria tradicional. É comumente utilizado como uma solução de mensageria prática e de alta performance. Suportando dois mecanismos de persistência diferentes, baseados em NIO ou AIO, o Artemis consegue prover um misto de robustez, baixa latência e boa velocidade mesmo quando atuando em modo persistente.
+O [Apache ActiveMQ Artemis](https://activemq.apache.org/components/artemis/) é um sistema moderno de mensageria de código aberto, escrito em Java, e mantido pela Fundação de Software Apache. Atualmente encontra-se em desenvolvimento constante sendo trabalhando como o sucessor natural do tradicional [Apache ActiveMQ](https://activemq.apache.org/) e a próxima evolução em termos de mensageria tradicional. É comumente utilizado como uma solução de mensageria prática e de alto desempenho. Suportando dois mecanismos de persistência diferentes, baseados em NIO ou AIO, o Artemis consegue prover um misto de robustez, baixa latência e boa velocidade mesmo quando atuando em modo persistente.
 
-Antes de criarmos o projeto com o Camel, precisamos criar uma instância de um broker Artemis. Esse passo pode ser realizado facilmente através de um container. O projeto Artemis fornece, junto com seu código fonte, instruções para a criação de containers. Podemos, também, utilizar containers fornecidos pela comunidade. Por exemplo:
+Antes de criarmos o projeto com o Camel, precisamos criar uma instância de um broker Artemis.
+Esse passo pode ser realizado facilmente por meio de um container.
+O projeto Artemis fornece, com seu código-fonte, instruções para a criação de containers.
+Podemos, também, utilizar containers fornecidos pela comunidade. Por exemplo:
 
 ```shell
 docker run -it --rm -p 8161:8161 -p 61616:61616 -p 5672:5672 -e ARTEMIS_USERNAME=admin -e ARTEMIS_PASSWORD=admin vromero/activemq-artemis:2.15.0-alpine
@@ -20,7 +23,7 @@ Uma vez que o Artemis esteja rodando com sucesso podemos seguir adiante e criar 
 mvn archetype:generate -B -DarchetypeGroupId=org.apache.camel.archetypes -DarchetypeArtifactId=camel-archetype-java -DarchetypeVersion=3.18.2 -DgroupId=camel-passo-a-passo -DartifactId=activemq-app-camel -Dversion=1.0.0-SNAPSHOT -Dpackage=activemq.app.camel
 ```
 
-Assim como no caso do primeiro projeto criado anteriormente, o resultado do comando acima será um projeto básico com o Camel e alguns dos arquivos mínimos necessários para a execução. Modificaremos esse projeto para que ele envie os arquivos para filas diferentes na nossa instância do Apache Artemis.
+Assim como no primeiro projeto criado anteriormente, o resultado do comando acima será um projeto básico com o Camel e alguns dos arquivos mínimos necessários para a execução. Modificaremos esse projeto para que ele envie os arquivos para filas diferentes na nossa instância do Apache Artemis.
 
 Para a comunicação com o nosso broker Artemis, podemos utilizar o componente _Simple JMS 2_, também conhecido como `SJMS2`. Esse é um componente que implementa boas práticas do padrão Jakarta Messaging API (JMS) e fornece um mecanismo simples para troca de dados com soluções e protocolos suportados por este padrão.
 
@@ -33,7 +36,7 @@ O primeiro passo para modificar nosso projeto para este propósito é adicionar 
 </dependency>
 ```
 
-Precisamos, também, de uma provedor para os _“Connection Factories”_. Uma implementação concreta que provê o código necessário para a comunicação com o broker JMS. Para tal, podemos usar diversos projetos como QPid JMS, Artemis JMS e outros. Neste exemplo, usamos o QPid JMS. Desta forma, precisamos adicionar a seguinte dependência:
+Precisamos, também, de um provedor para os _“Connection Factories”_. Uma implementação concreta que provê o código necessário para a comunicação com o broker JMS. Para tal, podemos usar diversos projetos como QPid JMS, Artemis JMS e outros. Neste exemplo, usamos o QPid JMS. Desta forma, precisamos adicionar a seguinte dependência:
 
 ```xml
 <dependency>
@@ -43,7 +46,7 @@ Precisamos, também, de uma provedor para os _“Connection Factories”_. Uma i
 </dependency>
 ```
 
-**Dica**: ao implementar uma solução profissional, é bastante provável, também, que será necessário utilizar um _pool_  de conexões. Como por exemplo, o projeto [PooledJMS](https://github.com/messaginghub/pooled-jms).
+**Dica**: ao implementar uma solução profissional, é bastante provável, também, que será necessário utilizar um _pool_ de conexões. Como, por exemplo, o projeto [PooledJMS](https://github.com/messaginghub/pooled-jms).
 
 A partir de então, pode-se criar uma instância do objeto de configuração da _connection factory_, configura-la com os parâmetros de conexão adiciona-lo ao contexto do Camel. Podemos adicionar os códigos a seguir no método configure da classe MyRouteBuilder.
 
