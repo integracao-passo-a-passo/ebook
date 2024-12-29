@@ -25,7 +25,7 @@ jobs:
         run: hugo --minify
 
       - name: Sync files
-        uses: SamKirkland/FTP-Deploy-Action@4.1.0
+        uses: SamKirkland/FTP-Deploy-Action@v4.3.5
         with:
           server: "angusyoung.org"
           username: "${{ secrets.FTP_USERNAME }}"
